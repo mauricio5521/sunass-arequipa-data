@@ -1,17 +1,57 @@
-# SUNASS Arequipa – Procesamiento y Validación de Datos
+# DATATHON SUNASS 2026 – RETO COMERCIAL (AREQUIPA)
 
-## 1. Objetivo
-Consolidar y validar información comercial de Arequipa a partir de múltiples archivos mensuales en formato CSV, generando un único dataset limpio y consistente para análisis.
+Proyecto desarrollado para el análisis, limpieza y procesamiento de datos comerciales de SUNASS Arequipa utilizando Python y Polars.
+
+## Autores
+
+- Mauricio Morales Cervantes
+- Joaquín Sebastian Cárdenas Cotrina
 
 ---
 
-## 2. Fuente de datos
-Los datos provienen de archivos mensuales:
+# Descripción del Proyecto
 
-- base_arequipa_01.csv
-- base_arequipa_02.csv
-- ...
-- base_arequipa_12.csv
+Este proyecto tiene como objetivo realizar el tratamiento y análisis de grandes volúmenes de información comercial correspondientes a registros de consumo de agua potable y alcantarillado de la ciudad de Arequipa.
+
+La solución implementa procesos de:
+
+- Exploración de datos
+- Validación de calidad
+- Unificación de archivos mensuales
+- Detección de inconsistencias
+- Corrección de registros anómalos
+- Generación de archivos auditables
+- Evaluación de consumos atípicos
+- Análisis tipo Pareto
+
+Todo el procesamiento fue desarrollado en Python empleando la librería **Polars**, optimizada para el manejo eficiente de datasets masivos.
+
+---
+
+# Objetivos del Script
+
+## 1. Escaneo y reconocimiento de datos
+
+El sistema realiza una inspección inicial de cada archivo CSV para:
+
+- Detectar dimensiones de la data
+- Identificar columnas y tipos de datos
+- Detectar valores nulos
+- Mostrar muestras de registros
+- Facilitar auditorías y validaciones previas
+
+---
+
+## 2. Unificación de información mensual
+
+El script consolida automáticamente los archivos:
+
+```text
+base_arequipa_1.csv
+base_arequipa_2.csv
+...
+base_arequipa_12.csv
+
 
 Cada archivo representa un mes del año.
 
@@ -89,8 +129,3 @@ resultado_final.csv
 - Todos los datos deben estar disponibles vía URL  
 
 ---
-
-## 11. Autor
-
-Mauricio Morales Cervantes  
-Arequipa, Perú
